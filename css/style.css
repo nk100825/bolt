@@ -17,6 +17,7 @@ body {
 .header {
   width: 100%;
   background-color: #FFF;
+  position:fixed
 }
 
 .header-inner {
@@ -125,13 +126,17 @@ h1 {
 .art-bottom-box {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center
 }
 
 .art-text {
-  font-size: 18px;
-  width: 510px;
+  width: 570px;
   margin: 0 90px;
+  font-size: 20px;
+}
+
+.art-text:first-child {
+  margin-left: 0;
 }
 
 .email {
@@ -139,7 +144,6 @@ h1 {
   font-size: 12px;
   background-color: #74cfae;
   color: #FFF;
-  width: 100px;
 }
 
 .section-back {
@@ -167,8 +171,7 @@ h1 {
 }
 
 .back-img:first-child{
-  margin-left: 0;
-  margin-left: 34px;
+  margin-left: 32px;
 }
 
 .back-icon {
@@ -190,11 +193,12 @@ h1 {
 }
 
 .btn {
-  padding: 50px;
+  margin: 0 auto;
 }
 
 .btn i {
   padding: 15px 0;
+  transition: all 0.3s;
 }
 
 .fa-facebook-f,
@@ -221,5 +225,4 @@ h1 {
 
 .btn i:hover {
   background-color: #FFF;
-  transition: all 0.3s;
 }
