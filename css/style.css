@@ -129,8 +129,8 @@ h1 {
 }
 
 .art-text {
-  font-size: 14px;
-  width: 470px;
+  font-size: 18px;
+  width: 510px;
   margin: 0 90px;
 }
 
@@ -221,4 +221,5 @@ h1 {
 
 .btn i:hover {
   background-color: #FFF;
+  transition: all 0.3s;
 }
