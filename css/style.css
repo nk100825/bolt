@@ -17,7 +17,8 @@ body {
 .header {
   width: 100%;
   background-color: #FFF;
-  position:fixed
+  position:fixed;
+  z-index: 1;
 }
 
 .header-inner {
@@ -35,6 +36,12 @@ body {
   padding: 14px 12px;
   font-size: 12px;
   color: #FFF;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  color: #000;
 }
 
 .title {
@@ -43,13 +50,18 @@ body {
 }
 
 .inner {
-  text-align: center;
   width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.bolt-inner {
+.title-inner {
   padding: 250px 0;
+}
+
+.title-box {
+  text-align: center;
+  z-index: 1;
 }
 
 h1 {
@@ -74,6 +86,12 @@ h1 {
   padding-top: 50px;
 }
 
+.phone-text-box {
+  width: 660px;
+  vertical-align: center;
+  margin-left: 80px;
+}
+
 .phone-text {
   font-size: 24px;
   margin-bottom: 35px;
@@ -83,7 +101,6 @@ h1 {
 .phone-text-lorem {
   font-size: 20px;
   color: #FFF;
-  margin: 0 200px;
 }
 
 .article { 
@@ -92,7 +109,7 @@ h1 {
 }
 
 .article-inner {
-  padding: 60px 0 90px 0;
+  padding: 60px 0 90px 0;;
 }
 
 .art-index {
@@ -109,10 +126,12 @@ h1 {
   margin-left: 100px;
   margin-top: 80px;
   opacity: 0.7;
+  transition:all 0,3s;
 }
 
-.art-img:hover {
+.art-bolt:hover {
   opacity: 1;
+  transition:all　0.3s;
 }
 
 .square-list .art-img:nth-child(3n+1) {
@@ -126,17 +145,14 @@ h1 {
 .art-bottom-box {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  margin-top: 70px;
 }
 
 .art-text {
   width: 570px;
-  margin: 0 90px;
   font-size: 20px;
-}
-
-.art-text:first-child {
-  margin-left: 0;
+  margin-right: 90px;
 }
 
 .email {
@@ -144,6 +160,12 @@ h1 {
   font-size: 12px;
   background-color: #74cfae;
   color: #FFF;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.email:hover {
+  color: #000 ;
 }
 
 .section-back {
@@ -166,45 +188,30 @@ h1 {
   margin-left: 180px;
 }
 
-.back-icon {
-  margin-top: 10px;
-}
-
 .back-img:first-child{
   margin-left: 32px;
 }
 
 .back-icon {
   font-size: 16px;
+  margin-top: 10px;
   color: #FFF;
 }
 
 .nav {
   background-color: #f2f2f2;
   width: 100%;
-}
-
-.nav-inner{
   padding: 200px 0;
 }
 
 .nav-icon {
   display: flex;
+  justify-content: center;
 }
 
 .btn {
-  margin: 0 auto;
-}
-
-.btn i {
   padding: 15px 0;
-  transition: all 0.3s;
-}
-
-.fa-facebook-f,
-.fa-dribbble,
-.fa-twitter,
-.fa-envelope {
+  transition:   all 0.3s;
   width: 185px;
   color: #74cfae;
 }
@@ -219,10 +226,10 @@ h1 {
 }
 
 .footer-text {
-  float: right;
+  text-align: right;
   color: #FFF;
 }
 
-.btn i:hover {
+.btn:hover {
   background-color: #FFF;
 }
