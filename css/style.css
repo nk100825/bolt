@@ -35,7 +35,7 @@ body {
   float: right;
   padding: 14px 12px;
   font-size: 12px;
-  color: #FFF;
+  color: #fff;
   transition: all 0.3s;
   text-decoration: none;
 }
@@ -50,11 +50,11 @@ body {
 
 .main {
   padding-top: 78px;
+
 }
 
 .title {
   background-color: #f2f2f2;
-  width: 100%;
 }
 
 .inner {
@@ -86,6 +86,7 @@ body {
 
 .section {
   background-color: #74cfae;
+
 }
 
 .phone-inner {
@@ -102,12 +103,12 @@ body {
 
 .phone-text {
   font-size: 24px;
-  color: #FFF;
+  color: #fff;
 }
 
 .phone-text-lorem {
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   margin-top: 35px;
 }
 
@@ -166,7 +167,7 @@ body {
   padding: 14px 20px;
   font-size: 12px;
   background-color: #74cfae;
-  color: #FFF;
+  color: #fff;
   transition: all 0.3s;
   text-decoration: none;
   margin-left: 90px;
@@ -178,6 +179,7 @@ body {
 
 .section-back {
   background-color: #4e4e4e;
+  width: 100%;
 }
 
 .back-inner {
@@ -186,7 +188,7 @@ body {
 
 .back-text {
   margin-bottom: 50px;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -202,11 +204,10 @@ body {
 .back-icon {
   font-size: 16px;
   margin-top: 10px;
-  color: #FFF;
+  color: #fff;
 }
 
 .nav {
-  width: 100%;
   background-color: #f2f2f2;
 }
 
@@ -228,7 +229,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #FFF; 
+  background-color: #fff; 
 }
 
 .footer {
@@ -241,7 +242,7 @@ body {
 
 .footer-text {
   text-align: right;
-  color: #FFF;
+  color: #fff;
 }
 
 @media screen and (max-width:1199px) {
@@ -290,12 +291,12 @@ body {
     margin-top: 80px;
   }
 
-.art-text {
-  width: auto;
-  margin-right: 0;
-  margin-bottom: 40px;
-  font-size: 16px;
-}
+  .art-text {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
 
   .art-bottom-box {
     margin-top: 80px;
@@ -365,15 +366,15 @@ body {
   }
 
   .nav {
-    padding: 0;
+    padding: 0 15px;
   }
   
   .nav-icon {
     flex-direction: column;
   }
-
+  
   .btn {
-    margin: 50px 15px;
+    margin: 50px auto;
     padding: 20px 0;
     width: 100%; 
   }
@@ -384,5 +385,5 @@ body {
 
   .btn:hover {
     background-color: #fff; 
-  } 
+  }  
 } 
