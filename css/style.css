@@ -43,6 +43,11 @@ body {
 .contact-btn:hover {
   color: #000;
 }
+
+.humberger {
+  display: none;
+}
+
 .main {
   padding-top: 78px;
 }
@@ -71,12 +76,12 @@ body {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .bolt-text {
   font-size: 30px;
   color: #c0c0c0;
+  margin-top: 20px;
 }
 
 .section {
@@ -97,13 +102,13 @@ body {
 
 .phone-text {
   font-size: 24px;
-  margin-bottom: 35px;
   color: #FFF;
 }
 
 .phone-text-lorem {
   font-size: 20px;
   color: #FFF;
+  margin-top: 35px;
 }
 
 .article { 
@@ -148,22 +153,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 70px;     
 }
 
 .art-text {
   width: 570px;
   font-size: 20px;
-  margin-right: 90px;
 }
 
 .email {
+  display: none;
   padding: 14px 20px;
   font-size: 12px;
   background-color: #74cfae;
   color: #FFF;
   transition: all 0.3s;
   text-decoration: none;
+  margin-left: 90px;
 }
 
 .email:hover {
@@ -199,8 +205,9 @@ body {
   color: #FFF;
 }
 
-.nav {
+.nav-inner {
   background-color: #f2f2f2;
+  width: 100%;
   padding: 200px 0;
 }
 
@@ -210,6 +217,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   padding: 15px 0;
   transition: all 0.3s;
   width: 185px;
@@ -243,13 +251,13 @@ body {
     display: block;
   }
 
-  .phone-text-box {
-    margin-left: 0;
+  .phone-inner {
     padding-bottom: 25px;
-    width: auto;
   }
 
-  .phone-text {
+  .phone-text-box {
+    margin-left: 0;
+    width: auto;
     margin-top: 20px;
   }
 
@@ -275,16 +283,24 @@ body {
     margin-top: 0;
   }
 
-  .art-img:nth-child(4n)
+  .art-img:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+.art-text {
+  width: auto;
+  margin-right: 0;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
   .art-bottom-box {
     margin-top: 80px;
   }
 
-  .art-text {
-    width: auto;
-    margin-right: 0;
-    margin-bottom: 40px;
-    font-size: 16px;
+  .email{
+    display: inline-block;
+    margin-left: 0;
   }
 
   .section-back {
@@ -309,11 +325,7 @@ body {
     margin-left: 0;
     margin-top: 0;
   }
-
-  .btn {
-    width: 150px;
-  }
-} 
+}
 
 @media screen and (max-width:767px) {
   .contact-btn {
@@ -321,6 +333,7 @@ body {
   }
 
   .humberger { 
+    display: block;
     left: 0;
     height: 20px;
     width: 30px;
@@ -357,9 +370,9 @@ body {
   }
 
   .btn {
-    width: 185px;
-    margin: 50px auto;
-    padding: 20px 0; 
+    margin: 50px 15px;
+    padding: 20px 0;
+    width: 100%; 
   }
 
   .btn:nth-child(n+2) {
