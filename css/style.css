@@ -138,9 +138,8 @@ body {
 .art-img {
   float: left;
   margin-left: 100px;
-  margin-top: 80px;
+  margin-top: 80px; 
 }
-
 
 .art-img:nth-child(3n+1) {
   margin-left: 0;
@@ -163,7 +162,6 @@ body {
 }
 
 .email {
-  display: none;
   padding: 14px 20px;
   font-size: 12px;
   background-color: #74cfae;
@@ -286,10 +284,11 @@ body {
   .art-img:nth-child(n+4) {
     margin-top: 0;
   }
-
-  .art-img:nth-child(3n+1) {
+  
+  .art-img:nth-child(4n) {
     margin-top: 80px;
   }
+  
 
   .art-text {
     width: auto;
@@ -365,8 +364,8 @@ body {
     font-size: 80px;
   }
 
-  .nav {
-    padding: 0 15px;
+  .nav-inner {
+    padding: 100px 0;
   }
   
   .nav-icon {
